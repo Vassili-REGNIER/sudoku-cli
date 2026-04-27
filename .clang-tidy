@@ -1,0 +1,41 @@
+---
+# Identifier naming is enforced by Google-style conventions + clang-format;
+# clang-tidy's naming rules conflict with common kPrefixed constants.
+Checks: >
+  -*,
+  bugprone-*,
+  cert-*,
+  clang-analyzer-*,
+  concurrency-*,
+  cppcoreguidelines-*,
+  misc-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -readability-identifier-length,
+  -readability-identifier-naming,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -misc-non-private-member-variables-in-classes,
+  -misc-include-cleaner,
+  -bugprone-easily-swappable-parameters,
+  -readability-convert-member-functions-to-static,
+  -readability-make-member-function-const,
+  -readability-simplify-boolean-expr,
+  -bugprone-branch-clone,
+  -cppcoreguidelines-init-variables,
+  -misc-no-recursion,
+  -misc-const-correctness,
+  -readability-function-cognitive-complexity,
+  -bugprone-unchecked-optional-access
+
+WarningsAsErrors: ''
+
+HeaderFilterRegex: 'include/sudoku/.*'
+
+CheckOptions:
+  - key: modernize-use-nullptr.NullMacros
+    value: 'NULL'
+...
