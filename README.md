@@ -1,6 +1,6 @@
 # Sudoku CLI
 
-A production-ready command-line Sudoku game written in modern C++ (C++20).
+A command-line Sudoku game written in modern C++ (C++20).
 
 ## Features
 
@@ -80,7 +80,3 @@ Follow the on-screen prompts to select difficulty, place numbers, undo moves, or
 ├── .github/workflows # CI pipeline
 └── CMakeLists.txt    # Build configuration
 ```
-
-## License
-
-MIT
