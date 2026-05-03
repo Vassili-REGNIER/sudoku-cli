@@ -1,5 +1,7 @@
 #include <sudoku/board.h>
 
+#include <cstddef>
+
 namespace sudoku {
 
 Board::Board() = default;

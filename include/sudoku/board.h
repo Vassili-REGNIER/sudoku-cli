@@ -2,9 +2,6 @@
 
 #include <sudoku/types.h>
 
-#include <optional>
-#include <vector>
-
 namespace sudoku {
 
 /// Immutable-friendly board representation.

@@ -1,6 +1,7 @@
 #include <sudoku/validator.h>
 
 #include <array>
+#include <cstddef>
 
 namespace sudoku {
 
