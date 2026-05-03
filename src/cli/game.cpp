@@ -99,7 +99,7 @@ void Game::handlePlace(int row, int col, int value) {
         return;
     }
 
-    history_.push_back({row, col, board_.cellAt(row, col)});
+    history_.push_back({.row = row, .col = col, .previous_value = board_.cellAt(row, col)});
     board_.setCell(row, col, value);
     Renderer::drawBoard(board_);
 
