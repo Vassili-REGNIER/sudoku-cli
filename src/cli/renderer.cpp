@@ -18,11 +18,11 @@ void Renderer::drawBoard(const Board& board) {
     for (int c = 1; c <= sudoku::kBoardSize; ++c) {
         std::cout << " " << c << " ";
         if (c % sudoku::kBoxSize == 0 && c < sudoku::kBoardSize) {
-            std::cout << "  ";
+            std::cout << " ";
         }
     }
     std::cout << "\n   " << kDim;
-    for (int i = 0; i < 33; ++i) {
+    for (int i = 0; i < 31; ++i) {
         std::cout << '-';
     }
     std::cout << kReset << "\n";
@@ -30,7 +30,7 @@ void Renderer::drawBoard(const Board& board) {
     for (int r = 0; r < sudoku::kBoardSize; ++r) {
         if (r > 0 && r % sudoku::kBoxSize == 0) {
             std::cout << "   " << kDim;
-            for (int i = 0; i < 33; ++i) {
+            for (int i = 0; i < 31; ++i) {
                 std::cout << '-';
             }
             std::cout << kReset << "\n";
@@ -55,7 +55,7 @@ void Renderer::drawBoard(const Board& board) {
     }
 
     std::cout << "   " << kDim;
-    for (int i = 0; i < 33; ++i) {
+    for (int i = 0; i < 31; ++i) {
         std::cout << '-';
     }
     std::cout << kReset << "\n";
